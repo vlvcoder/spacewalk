@@ -11,6 +11,7 @@
       padding: 0;
       overflow: hidden;
       background-color: black;
+      cursor: crosshair;
     }
 
     #info {
@@ -21,11 +22,14 @@
       z-index: 100;
       display: block;
     }
+
     #info pre {
       color: white;
       margin-right: 30px;
       font-size: 32px;
+      user-select: none;
     }
+
     #mobile {
       position: absolute;
       top: 50vh;
@@ -34,15 +38,33 @@
       color: yellow;
       font-size: 18px;
     }
+
+    #board {
+      position: absolute;
+      bottom: 0vh;
+      width: 100vw;
+      text-align: right;
+    }
+
+    #board pre {
+      color: gray;
+      margin-right: 30px;
+      font-size: 32px;
+      user-select: none;
+    }
+
   </style>
-  <script type="module" crossorigin src="./assets/index-D9y6t-nC.js"></script>
+  <script type="module" crossorigin src="./assets/index-DlUXhE3W.js"></script>
 </head>
 
 <body>
   <div id="info">
-    <pre>Spacewalk</pre>
+    <pre>✧Spacewalk</pre>
   </div>
   <div id="mobile"></div>
+  <div id="board">
+    <pre id="z">0</pre>
+  </div>
 </body>
 
 </html>
